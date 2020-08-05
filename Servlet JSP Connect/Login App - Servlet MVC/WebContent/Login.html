@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+position: absolute;
+top: 10px;
+left: 100px;
+width:250px;
+height:120px;
+border: 2px solid green;
+border-radius: 20px;
+}
+</style>
+<script type="text/javascript">
+function loginValidation(){
+	var userName = document.LoginForm.uname.value;
+	var password = document.LoginForm.pwd.value;
+	if(userName=="" || password==""){
+		alert("Fields Can not be empty");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<form action="LoginServlet" name="LoginForm">
+<div>
+<br>
+<table>
+<tr><td>User Name</td><td><input type="text" name="uname"/></td></tr>
+<tr><td>Password </td><td><input type="password" name="pwd"/></td></tr>
+<tr><td colspan="2" align="Center"><input type="Submit" value="Login" onClick="return loginValidation()"/></td></tr>
+</table>
+</div>
+</form>
+</body>
+</html>
