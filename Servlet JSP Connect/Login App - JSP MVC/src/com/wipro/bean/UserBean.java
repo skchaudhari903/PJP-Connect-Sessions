@@ -8,13 +8,11 @@ public class UserBean {
 	public UserBean() {
 	}
 
-	
 	public UserBean(String userName, String password) {
 		// TODO Auto-generated constructor stub
 		this.userName = userName;
 		this.password = password;
 	}
-
 
 	public String getUserName() {
 		return userName;
