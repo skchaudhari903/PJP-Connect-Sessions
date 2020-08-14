@@ -15,6 +15,7 @@ public class Employee {
 		this.name = name;
 		this.empId = empId;
 		this.address = address;
+		System.out.println("Address value @ constructor : "+address);
 	}
 	
 	public String getName() {
@@ -39,6 +40,7 @@ public class Employee {
 	
 	public void setAddress(Address address) {
 		this.address = address;
+		System.out.println("Address value @ Setter Method : "+address);
 	}
 	
 	@Override
