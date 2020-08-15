@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/beans/spring-context.xsd">
+
+	<bean id="addressBean" class="com.wipro.bean.Address">
+		<constructor-arg index="0" type="java.lang.String" value="Pritech Park"></constructor-arg>
+		<constructor-arg index="1" type="java.lang.String" value="Bengaluru"></constructor-arg>
+		<constructor-arg index="2" type="java.lang.String" value="560037"></constructor-arg>
+	</bean>
+	
+	<bean id="employeeBean" class="com.wipro.bean.Employee" autowire="constructor">
+		<property name="name" value="ALLEN"></property>
+		<property name="empId" value="2000123"></property>
+	</bean>
+	
+</beans>
