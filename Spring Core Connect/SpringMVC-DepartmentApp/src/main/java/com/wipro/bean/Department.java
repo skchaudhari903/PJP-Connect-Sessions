@@ -1,8 +1,18 @@
 package com.wipro.bean;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="MYDept")
 public class Department {
+	@Id
 	private int deptno;
+	@Column(length=10)
 	private String dname;
+	@Column(length=10)
 	private String loc;
 	
 	public Department() {
